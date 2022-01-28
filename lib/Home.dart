@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:air_quality_app/air_quality_model.dart';
 import 'package:air_quality_app/pollution.dart';
 import 'package:flutter/services.dart';
-import 'package:air_quality_app/Loading_Screen.dart';
+
 class Home extends StatefulWidget {
   final AirQualityModel airQualityModel;
   const Home({Key? key, required this.airQualityModel}) : super(key: key);
