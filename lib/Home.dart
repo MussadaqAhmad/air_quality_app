@@ -95,29 +95,29 @@ class _HomeState extends State<Home> {
                     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 15),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
+                  Container(
+                    height: 150,
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: BorderRadius.circular(20),
+                    ),
                     child: Container(
-                      height: 150,
                       decoration: BoxDecoration(
-                        color: Colors.red,
                         borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(20),
 
-                          // gradient: LinearGradient(
-                          //     begin: Alignment.bottomRight,
-                          //     stops:const [
-                          //       0.3,
-                          //       0.9
-                          //     ],
-                          //     colors: [
-                          //       Colors.black.withOpacity(.8),
-                          //       Colors.black.withOpacity(.2)
-                          //     ])
-                        ),
+                        // gradient: LinearGradient(
+                        //     begin: Alignment.bottomRight,
+                        //     stops:const [
+                        //       0.3,
+                        //       0.9
+                        //     ],
+                        //     colors: [
+                        //       Colors.black.withOpacity(.8),
+                        //       Colors.black.withOpacity(.2)
+                        //     ])
+                      ),
+                      child: FittedBox(
+                      fit: BoxFit.contain,
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: <Widget>[
@@ -185,7 +185,7 @@ class _HomeState extends State<Home> {
                               child: Column(
                                 children: <Widget>[
                                   const Text(
-                                    "Dominent Polutent Level",
+                                    "DominentPol",
                                     style: TextStyle(fontSize: 20),
                                   ),
                                   const Icon(
@@ -213,4 +213,3 @@ class _HomeState extends State<Home> {
     );
   }
 }
-
