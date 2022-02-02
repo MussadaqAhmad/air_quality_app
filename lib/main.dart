@@ -1,15 +1,17 @@
+import 'package:air_quality_app/Home.dart';
 import 'package:flutter/material.dart';
 import 'Loading_Screen.dart';
-
-void main() {
+import 'package:air_quality_app/Data.dart';
+void main() 
+{
   runApp(const MyApp());
 }
 
-//=> runApp(MaterialApp(
+// => runApp(MaterialApp(
 //   initialRoute: '/',
 //   routes: {
 // '/':(context) =>const LoadingScreen(),
-// 'home':(context)=>  Home(airQualityModel:null)
+// 'home':(context)=>  Home(airQualityModel: )
 //   },
 // ));
 class MyApp extends StatelessWidget {
